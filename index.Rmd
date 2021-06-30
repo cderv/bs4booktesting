@@ -16,6 +16,8 @@ description: "This is a minimal example of using the bookdown package to write a
 
 # Prerequisites
 
+<p style="text-align: center;"><img src="repro.jpg" width="30%" alt="Reproducibility illustration" /></p>
+
 ```{r, include = FALSE}
 file.create(bookdown:::output_path(".nojekyll"))
 ```

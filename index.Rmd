@@ -10,9 +10,20 @@ link-citations: yes
 cover-image: repro.jpg
 url: https://cderv.github.io/bs4booktesting
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bs4_book()."
+resource_files:
+  - .nojekyll
 ---
 
+
+
 # Prerequisites
+
+<p style="text-align: center;"><img src="repro.jpg" width="30%" alt="Reproducibility illustration" /></p>
+
+```{r, include = FALSE}
+file.create(bookdown:::output_path(".nojekyll"))
+```
+
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 
@@ -32,7 +43,6 @@ cat(rep("x", 100))
 cat(rep("x", 100))
 cat(rep("x", 100))
 ```
-
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

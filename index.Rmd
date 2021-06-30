@@ -7,7 +7,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bs4_book()."
 ---
 
 # Prerequisites
@@ -23,8 +23,6 @@ install.packages("bookdown")
 ```
 
 Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
-
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
 
 ```{r echo=FALSE, collapse=TRUE, comment=NA}
 cat(rep("x", 100))

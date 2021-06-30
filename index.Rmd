@@ -7,7 +7,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-cover-image: repro.jpg
+cover-image: repro.png
 url: https://cderv.github.io/bs4booktesting
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bs4_book()."
 ---
@@ -16,7 +16,7 @@ description: "This is a minimal example of using the bookdown package to write a
 
 # Prerequisites
 
-<p style="text-align: center;"><img src="repro.jpg" width="30%" alt="Reproducibility illustration" /></p>
+<p style="text-align: center;"><img src="repro.png" width="30%" alt="Reproducibility illustration" /></p>
 
 ```{r, include = FALSE}
 file.create(bookdown:::output_path(".nojekyll"))

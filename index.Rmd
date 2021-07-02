@@ -33,14 +33,27 @@ install.packages("bookdown")
 # devtools::install_github("rstudio/bookdown")
 ```
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+## Testing code block with long line content
 
 ```{r echo=FALSE, collapse=TRUE, comment=NA}
-cat(rep("x", 100))
-cat(rep("x", 100))
-cat(rep("x", 100))
-cat(rep("x", 100))
+cat(rep(letters, 100))
 ```
+
+## Collapse TRUE vs FALSE
+
+We collapse source and output
+
+```{r, collapse=TRUE}
+1+1
+```
+
+or we do not
+
+```{r, collapse=FALSE}
+1+1
+```
+
+
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

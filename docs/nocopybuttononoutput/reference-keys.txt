@@ -1,7 +1,8 @@
 fig:nice-fig
 tab:nice-tab
 prerequisites
-testing-code-block-with-long-line-content
+testing-code-output-block-with-long-line-content
+and-code-input-block
 collapse-true-vs-false
 yaml-field-example
 intro

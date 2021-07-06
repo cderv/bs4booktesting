@@ -34,7 +34,7 @@ install.packages("bookdown")
 ## Testing code output block with long line content
 
 ```{r echo=FALSE, collapse=TRUE, comment=NA}
-cat(rep(letters, 100))
+cat(rep(letters, 19))
 ```
 
 ### And code input block

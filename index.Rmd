@@ -12,8 +12,6 @@ url: https://cderv.github.io/bs4booktesting
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bs4_book()."
 ---
 
-
-
 # Prerequisites
 
 <p style="text-align: center;"><img src="repro.png" width="30%" alt="Reproducibility illustration" /></p>
@@ -33,10 +31,18 @@ install.packages("bookdown")
 # devtools::install_github("rstudio/bookdown")
 ```
 
-## Testing code block with long line content
+## Testing code output block with long line content
 
 ```{r echo=FALSE, collapse=TRUE, comment=NA}
 cat(rep(letters, 100))
+```
+
+### And code input block
+
+```{r, echo = TRUE}
+VeryLongfunctionNameWithLotsOfArgument <- function(a, b, c, d, e, f, g, h, i, j, k, l) {
+  cat("I do nothing!")
+}
 ```
 
 ## Collapse TRUE vs FALSE
@@ -53,7 +59,14 @@ or we do not
 1+1
 ```
 
+## YAML field example
 
+to test copy button
+
+```yaml
+title: Dummy doc
+output: html_document
+```
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

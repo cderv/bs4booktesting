@@ -11,7 +11,7 @@ gert::git_commit("Rebuild base book")
 gert::git_push()
 
 # x-scroll
-out_dir <-"docs/wrap-and-scroll"
+out_dir <- "docs/wrap-and-scroll"
 gert::git_branch_checkout("maelle-overflow", repo = repo)
 devtools::load_all(repo)
 render_book(".", "bookdown::bs4_book", output_dir = out_dir, quiet = TRUE)

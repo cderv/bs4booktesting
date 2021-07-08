@@ -9,4 +9,4 @@ render_book(".", "bookdown::bs4_book", quiet = TRUE)
 gert::git_add("docs/")
 gert::git_commit("Rebuild base book")
 gert::git_push()
-
+utils::browseURL(base_url)

@@ -393,12 +393,12 @@ code a:any-link {
 }
 
 /* copy button */
-
+/*
 .hasCopyButton {
   position: relative;
 }
-
-.btn-copy {
+*/
+.btn-copy-ex {
   position: absolute;
   right: 0;
   top: 0;
